@@ -1,14 +1,14 @@
 %%   User-fiendly code based on the following article:
-%$£   EVALUATION OF STED SUPER-RESOLUTION IMAGE QUALITY BY IMAGE CORRELATION SPECTROSCOPY (QuICS)
-%$£  
-%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£ 
-%$£                                                                     %$£
-%$£                         Luca Lanzanò & Diaspro-Lab                  %$£
-%$£      University of Catania - Department of Physics and Astronomy    %$£
-%$£         Istituto Italiano di Tecnologia - Nanoscopy Department      %$£
-%$£                      User-Friendly Version (26-08-2021)             %$£
-%$£                                                                     %$£
-%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£
+%$Â£   EVALUATION OF STED SUPER-RESOLUTION IMAGE QUALITY BY IMAGE CORRELATION SPECTROSCOPY (QuICS)
+%$Â£  
+%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£ 
+%$Â£                                                                     %$Â£
+%$Â£                         Luca LanzanÃ² & Diaspro-Lab                  %$Â£
+%$Â£      University of Catania - Department of Physics and Astronomy    %$Â£
+%$Â£         Istituto Italiano di Tecnologia - Nanoscopy Department      %$Â£
+%$Â£                      User-Friendly Version (26-08-2021)             %$Â£
+%$Â£                                                                     %$Â£
+%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£%$Â£
 
 % Main input file is a single .TIF image 
 %(or a .TIF stack of 2 independent replicates of the same image, if available)
@@ -401,7 +401,8 @@ for i=1:NumberOfAngles
    if j==1
    ProfMat(NumberOfAngles+i,:)=profile;
    else
-   ProfMat(i,:)=profile;
+%    ProfMat(i,:)=profile;
+   ProfMat(i,:)=[profile(2:end),profile(end)];  % excluding the central ACF point (0,0)
    end   
 end
 
