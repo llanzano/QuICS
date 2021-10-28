@@ -1,6 +1,7 @@
 %%   User-fiendly code based on the following article:
-%$£   EVALUATION OF STED SUPER-RESOLUTION IMAGE QUALITY BY IMAGE CORRELATION SPECTROSCOPY (QuICS)
-%$£  
+%$£  Cerutti, E., D’Amico, M., Cainero, I. et al. 
+%$£  Evaluation of sted super-resolution image quality by image correlation spectroscopy (QuICS). Sci Rep 11, 20782 (2021).
+%$£  https://doi.org/10.1038/s41598-021-00301-x
 %$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£%$£ 
 %$£                                                                     %$£
 %$£                         Luca Lanzanò & Diaspro-Lab                  %$£
